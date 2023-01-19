@@ -1,0 +1,19 @@
+from tkinter import *
+
+
+root = Tk()
+
+under_font=('underline',1)
+label1 = Label(root,text="This text is bold." , font="bold")
+label2 = Label(root,text="This text is italic." , font="italic")
+label3 = Label(root, text="This text is underlined.",font = "Helvetica 12 underline" )
+
+
+label1.pack()
+label2.pack()
+label3.pack()
+
+
+
+
+root.mainloop()
