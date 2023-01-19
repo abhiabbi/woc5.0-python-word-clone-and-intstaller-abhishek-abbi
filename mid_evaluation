@@ -4,14 +4,15 @@ from tkinter import *
 root = Tk()
 
 under_font=('underline',1)
-label1 = Label(root,text="This text is bold." , font="bold")
+label1 = Label(root,text="This text is bold." , font="Bold")
 label2 = Label(root,text="This text is italic." , font="italic")
 label3 = Label(root, text="This text is underlined.",font = "Helvetica 12 underline" )
-
+newlabel = Label(root,text="This text has different style" ,font="jokerman 25 normal")
 
 label1.pack()
 label2.pack()
 label3.pack()
+newlabel.pack()
 
 
 
