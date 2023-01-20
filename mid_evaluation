@@ -2,17 +2,23 @@ from tkinter import *
 
 
 root = Tk()
+def clearing():
+    name.delete(0,END)
 
 under_font=('underline',1)
 label1 = Label(root,text="This text is bold." , font="Bold")
 label2 = Label(root,text="This text is italic." , font="italic")
 label3 = Label(root, text="This text is underlined.",font = "Helvetica 12 underline" )
 newlabel = Label(root,text="This text has different style" ,font="jokerman 25 normal")
+name = Entry(root, width= 20)
+clear_button=Button(root,text="Clear", command= clearing)
 
 label1.pack()
 label2.pack()
 label3.pack()
 newlabel.pack()
+name.pack()
+clear_button.pack()
 
 
 
